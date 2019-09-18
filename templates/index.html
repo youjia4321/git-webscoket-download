@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		    <title>文件下载</title>
+	</head><body>
+		{%  forfile in files %}
+		    <p>标题：{{ file.filename }}</p>
+		        {{ file.document }}<a href="/download/{{ file.dument }}" trget="_blank">&nbsp;&nbsp;点我下载</a>
+			{% endfor %}
+	</body>
+
+</html>
